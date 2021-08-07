@@ -1,0 +1,1 @@
+java -jar toto-jar-with-dependencies.jar $@
