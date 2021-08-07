@@ -120,8 +120,8 @@ public class TodoFile {
 
         for (TodoItem todoItem : todoItems) {
             String itemLine = String.format(
-                    "%s. %s",
-                    todoItem.getIndex(), todoItem.getItem());
+                    "%s. %s%s",
+                    todoItem.getIndex(), todoItem.getStatus().equals(Status.DONE.name()) ? "[Done] " : "", todoItem.getItem());
             System.out.println(itemLine);
         }
         String total = String.format(
